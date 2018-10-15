@@ -19,7 +19,11 @@ namespace Allergy_Findr
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UILabel l_BarcodeNumber { get; set; }
+        UIKit.UILabel l_FoodName { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UITextView t_Ingredients { get; set; }
 
         void ReleaseDesignerOutlets ()
         {
@@ -28,9 +32,14 @@ namespace Allergy_Findr
                 b_Scan = null;
             }
 
-            if (l_BarcodeNumber != null) {
-                l_BarcodeNumber.Dispose ();
-                l_BarcodeNumber = null;
+            if (l_FoodName != null) {
+                l_FoodName.Dispose ();
+                l_FoodName = null;
+            }
+
+            if (t_Ingredients != null) {
+                t_Ingredients.Dispose ();
+                t_Ingredients = null;
             }
         }
     }
